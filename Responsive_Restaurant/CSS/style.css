@@ -1,0 +1,304 @@
+:root{
+  --green:#3D5B59;
+  --mauve:#B99095;
+  --salmon:#FCB5AC;
+  --mint:#B5E5CF;
+  --blue:#41729F;
+  --darkblue:#0E21A0;
+  --purple:#4C3A51;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/Responsive_Restaurant/Media/Food-8.png");
+  background-color: var(--mauve);
+  background-size:100% 100%;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+   height:100vh;
+   width: 100%;
+  margin: 0; 
+} 
+
+h1{
+  text-align: center;
+  text-decoration: solid;
+  text-shadow: 4px 4px 4px  black;
+  color:silver;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.top a{
+  text-decoration:none;
+  color:var(--salmon) ;
+  padding:20px;
+  margin:5px;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid var(--blue); 
+  font-size: 1.5em;
+  color:#DEF5E5;
+  text-shadow: 4px 4px 4px var(#F3FDE8);
+} 
+@media screen and (min-width: 768px) {
+  .top {
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+
+  .top a {
+      margin: 0 10px; /* Adjust the margin as needed */
+      border: none; /* Remove the border for desktop view */
+  }
+}
+table{
+  width: 100%;
+  padding:1em;
+}
+
+.menu{
+  margin: 0;
+  background-image: linear-gradient(rgba(222, 216, 241, 0.5),rgba(11, 11, 33, 0.5));
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(244px,1fr));
+}
+
+nav a:hover{
+  color: black;
+}
+
+h2
+{
+  text-align: center;
+}
+
+.menu tr
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.menu td:nth-child(1)
+{
+  flex:1; 
+  justify-self: left;
+}
+
+.menu td:nth-child(2)  
+{
+  justify-self: right;
+}
+
+/* Styles for the .bottom class */
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  background-color: var(--purple);
+}
+
+.bottom a {
+  display: block;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s;
+  text-align: center;
+  min-width: 150px; /* Adjust the minimum width as needed */
+  flex: 1; /* Distribute available space equally */
+}
+
+.bottom a:hover {
+  background-color: #ddd;
+}
+
+/* Media query for mobile devices */
+@media all and (max-width: 767px)
+ {
+  .bottom a
+   {
+    min-width: 100%; /* Expand to full width on mobile */
+  }
+}
+
+
+
+
+
+.box i:hover
+{
+  transform: translate(0,-20%);
+  color:whitesmoke;
+  background-color: var(--mauve);
+} 
+
+
+footer
+{
+  text-align: center;
+  margin-bottom: 100px;
+  margin: 0;
+}
+
+.Aboutus
+{
+  margin:0;
+  background-image: linear-gradient(rgba(99, 39, 167, 0.786),rgba(152, 148, 157, 0.786));
+  padding: 10px !important;
+}
+
+p::first-line
+{
+text-indent:0;
+}
+.main
+{
+  display:flex;
+  margin:0;
+}
+
+.para1
+{
+  font-size: 1.5em;
+  flex:3;
+  margin:0;
+  padding-left: 100px;;
+  color: gold;
+  text-shadow: 4px 4px 4px var(--green);
+}
+
+
+.para2
+{
+  font-size: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 220px;
+  margin-right: 100px;
+  justify-content: center;
+  align-items: center;
+  color: #B5C99A;
+  text-shadow: 2px 2px 2px var(--green);
+}
+
+div input{
+  margin-left:50px;
+  width:50vw;
+  line-height: 3em;
+  font-size: 1rem;
+  padding:10px;
+  margin-top: 30px;;
+  margin-bottom:100px;;
+}
+
+::placeholder
+{
+  font-size: 1.5em;;
+  padding:200px;
+}
+
+
+
+.box {
+  text-align: center;
+  background-color: #f0f0f0; /* Background color for the container */
+  padding: 10px; /* Optional: Add padding to the container */
+  margin-bottom: 30px;
+}
+
+.box > div {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.box i {
+  font-size: 24px;
+  color: #333; /* Icon color */
+  background-color: #fff; /* Icon background color */
+  border-radius: 50%; /* Optional: Add rounded corners to the icons */
+  padding: 5px; /* Optional: Add padding around the icons */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  transform: translate(0,0);
+}
+
+.box i:hover {
+  color: #281b1b; /* Icon color on hover */
+  background-color:var(--mauve); /* Background color on hover */
+}
+
+
+#icon
+{
+  margin-left:300px ;
+  font-size: 2rem;;
+}
+
+#Menu
+{
+  margin-top: 50px ;
+  justify-self: center;
+}
+
+.container {
+  
+  background-color:initial;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 30px auto; /* Center the container horizontally */
+}
+
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 50%;
+  position: absolute; /* Change the position to absolute */
+  top: 0; /* Position the circle at the top of its containing element */
+  left: 10%; /* Position the circle horizontally in the middle */
+  transform: translateX(-50%); /* Center the circle horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  /* animation: moveRotate 3s linear infinite; */
+  animation: moveRotate 3s ease-out 0s infinite normal both;
+}
+
+
+
+
+@keyframes moveRotate {
+  0% {
+    width: 200px;
+    height: 200px;
+    background-color: darkorchid;
+    transform: translateY(0);
+}
+50% {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    transform: translateY(-200vh); 
+}
+100% {
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    transform: translateY(-350vh); 
+}
+}
